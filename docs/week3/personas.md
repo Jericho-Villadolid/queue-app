@@ -4,7 +4,7 @@
 
 | | |
 | --- | --- |
-| **Photo or sketch** | [A drawing, an icon, or a free stock photo. Never a photo of the real person you interviewed.] |
+| **Photo or sketch** | docs/week3/persona1img.jpg |
 | **Age, role and background** | 19, 2nd year CA student, has back-to-back classes|
 | **Goals** | Successfully find and join a queue for an event. Acquire the food in time before his class starts|
 | **Frustrations** | Requires physically waiting in a long line, sometimes in the heat. Uncertainty of the remaining availability of food supply. |
@@ -20,10 +20,10 @@ Juan’s Algorithms class ends at 11:30AM, and his next class starts at 12:00PM.
 
 | Task | Screen | Requirement ID |
 | --- | --- | --- |
-| Join the queue for an event line | Join | FR-00 |
-| Check which events are still available before joining | Join | FR-00 |
-| See ticket number and how many people  ahead | My place | FR-00 |
-| Leave the queue anytime | My place | FR-00 |
+| Join the queue for an event line | Join | FR-02|
+| Check which events are still available before joining | Join | FR-01 |
+| See ticket number and how many people  ahead | My place | FR-03 |
+| Leave the queue anytime | My place | FR-05 |
 
 ### What this means for my interface
 
@@ -39,7 +39,7 @@ Juan’s Algorithms class ends at 11:30AM, and his next class starts at 12:00PM.
 
 | | |
 | --- | --- |
-| **Photo or sketch** | [A drawing, an icon, or a free stock photo. Never a photo of the real person you interviewed.] |
+| **Photo or sketch** | docs/week3/persona2img.jpg |
 | **Age, role and background** | 22, 4th year CCS SC member, volunteered as a server for the free pizza event |
 | **Goals** | Serve students in the correct order, fairly and without arguments. Know how many portions are left so she can tell students early. |
 | **Frustrations** | Crowds pushing toward the serving table, with people cutting in line. Free food draws more students than there are portions, so she has to turn people away. |
@@ -49,19 +49,19 @@ Juan’s Algorithms class ends at 11:30AM, and his next class starts at 12:00PM.
 
 ### Scenario
 
-At 11:30 the free food event opens, and a line of students is already forming at the serving table. Anna, on her shift as a Student Council volunteer, opens the staff dashboard on the laptop. The waiting list is ready with the next ticket at the top, and a count of how many are in queue. She taps “Call next,” and the student’s app updates while she prepares the serving. When the student arrives, she taps “Serve.” If nobody shows up after a couple of minutes, she taps “No-show” and moves on. She no longer shouts numbers or argues over who is next, and the crowd at the table thins out because students can wait elsewhere.
+At 11:30 the free food event opens, and a line of students is already forming at the serving table. Anna, on her shift as a Student Council volunteer, opens the staff dashboard on the laptop. The waiting list is ready with the next ticket at the top, and a count of how many are in queue. She taps “Call next,” and the student’s app updates while she prepares the serving. When the student arrives, she taps “Served.” If nobody shows up after a couple of minutes, she taps “DNA” (did not attend) and moves on. She no longer shouts numbers or argues over who is next, and the crowd at the table thins out because students can wait elsewhere.
 
 ### Top tasks in the app
 
 | Task | Screen | Requirement ID |
 | --- | --- | --- |
-| See the queue in order | Dashboard | FR-00 |
-| Call the next person in queue | Dashboard | FR-00 |
-| Mark a ticket as served | Dashboard | FR-00 |
-| Mark a ticket as no-show | Dashboard | FR-00 |
+| See the queue in order | Dashboard | FR-01 |
+| Call the next person in queue | Dashboard | FR-02 |
+| Mark a ticket as served | Dashboard | FR-04 |
+| Mark a ticket as DNA | Dashboard | FR-04 |
 
 ### What this means for my interface
 
 1. Because Anna serves one student after another with busy hands, my interface must put a large “Call next” button at the top of the dashboard.
-2. Because Anna is in a noisy, crowded event, my interface must make the "Serve" and "No-show" buttons large, clearly separated and labeled, so she does not accidentally tap the wrong one.
+2. Because Anna is in a noisy, crowded event, my interface must make the "Served" and "DNA" buttons large, clearly separated and labeled, so she does not accidentally tap the wrong one.
 3. Because Anna is busy serving, my interface must quickly refresh automatically whenever someone joins or leaves the queue.
